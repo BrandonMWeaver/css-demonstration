@@ -2,3 +2,34 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*
+    Linear-gradient text demonstration ->
+*/
+.linear-gradient__text {
+    background-color: #050505;
+}
+
+.linear-gradient__text p {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+    font-style: italic;
+    color: transparent;
+    background-image: linear-gradient(to right, #ff0505, #ff05ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+/*
+    Linear-gradient text demonstration <-
+*/
