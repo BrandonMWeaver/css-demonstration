@@ -3,6 +3,10 @@ html, body {
     padding: 0;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -32,4 +36,44 @@ html, body {
 }
 /*
     Linear-gradient text demonstration <-
+*/
+
+/*
+    Animated linear-gradient demonstration ->
+*/
+.animated__linear-gradient {
+    background-color: #9b0537;
+}
+
+.animated__linear-gradient div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 10%;
+    background-image: linear-gradient(to right, #ffff05, #ff05ff);
+    background-size: 400%;
+    background-position: left;
+    animation-name: animated__linear-gradient__animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+.animated__linear-gradient div p {
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 20px;
+    color: #fff;
+}
+
+@keyframes animated__linear-gradient__animation {
+    0% { background-position: left; }
+    100% { background-position: right; }
+}
+/*
+    Animated linear-gradient demonstration <-
 */
