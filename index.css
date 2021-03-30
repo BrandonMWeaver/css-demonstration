@@ -9,49 +9,39 @@ html, body {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
+    flex-flow: row wrap;
+    padding: 10px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
 }
 
 /*
-    Linear-gradient text demonstration ->
+    Linear-gradient demonstration ->
 */
-.linear-gradient__text {
-    background-color: #050505;
-}
-
-.linear-gradient__text p {
+.text, .animated {
     margin: 0;
+    width: 100%;
+    height: calc(50vh - 10px);
+    line-height: calc(50vh - 10px);
     text-align: center;
+}
+
+.text {
     text-transform: uppercase;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 150px;
-    font-style: italic;
+    font-family: monospace;
+    font-size: 5vmin;
     color: transparent;
-    background-image: linear-gradient(to right, #ff0505, #ff05ff);
-    background-clip: text;
+    background-image: linear-gradient(to right, #ff0, #f0f);
     -webkit-background-clip: text;
-}
-/*
-    Linear-gradient text demonstration <-
-*/
-
-/*
-    Animated linear-gradient demonstration ->
-*/
-.animated__linear-gradient {
-    background-color: #9b0537;
+    background-clip: text;
 }
 
-.animated__linear-gradient div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 10%;
-    background-image: linear-gradient(to right, #ffff05, #ff05ff);
+.animated {
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 5vmin;
+    color: #fff;
+    background-image: linear-gradient(to right, #ff0, #f0f);
     background-size: 400%;
     background-position: left;
     animation-name: animated__linear-gradient__animation;
@@ -61,19 +51,10 @@ html, body {
     animation-timing-function: linear;
 }
 
-.animated__linear-gradient div p {
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: monospace;
-    font-size: 20px;
-    color: #fff;
-}
-
 @keyframes animated__linear-gradient__animation {
     0% { background-position: left; }
     100% { background-position: right; }
 }
 /*
-    Animated linear-gradient demonstration <-
+    Linear-gradient demonstration <-
 */
