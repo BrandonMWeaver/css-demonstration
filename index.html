@@ -5,10 +5,28 @@
         <title>Index</title>
     </head>
     <body>
+        <header>
+            <button>linear-gradient</button>
+            <button>TEMP</button>
+            <button>TEMP</button>
+            <button>TEMP</button>
+        </header>
         <div class="linear-gradient container">
             <p class="text">Linear-gradient text example</p>
             <p class="animated">Animated linear-gradient example</p>
         </div>
         <div class="container" style="background-color: #9bcd9b;"></div>
+        <div class="container" style="background-color: #9b9bff;"></div>
+        <div class="container" style="background-color: #cd9bff;"></div>
     </body>
+    <script>
+        const navigationButtons = document.querySelectorAll("header button");
+        const containers = document.querySelectorAll(".container");
+
+        for (let i = 0; i < navigationButtons.length; i++) {
+            navigationButtons[i].addEventListener("click", () => {
+                window.scrollTo({ top: containers[i].offsetTop - 70, behavior: "smooth" });
+            });
+        }
+    </script>
 </html>
