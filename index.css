@@ -3,15 +3,29 @@ html, body {
     padding: 0;
 }
 
+/*
+    Scrollbar demonstration ->
+*/
 ::-webkit-scrollbar {
-    display: none;
+    width: 20px;
 }
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(#f0f 50%, #9bcd9b 50%);
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(#ff00ff69 50%, #9bcd9b69 50%);
+}
+/*
+    Scrollbar demonstration <-
+*/
 
 .container {
     display: flex;
     flex-flow: row wrap;
     padding: 10px;
-    width: calc(100vw - 20px);
+    width: calc(100vw - 40px);
     height: calc(100vh - 20px);
 }
 
