@@ -115,3 +115,15 @@ header button:hover {
 /*
     Linear-gradient demonstration <-
 */
+
+/*
+    Image demonstration ->
+*/
+.image {
+    width: 50%;
+    background-size: cover;
+    background-position: bottom;
+}
+/*
+    Image demonstration <-
+*/
