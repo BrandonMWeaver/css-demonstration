@@ -22,12 +22,17 @@ header button {
     height: 50px;
     text-transform: uppercase;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 2vmin;
     color: #fff;
     border: none;
     border-radius: 25px;
     outline: none;
     background-color: #9b9bff;
+    transition: background-color .5s;
+}
+
+header button:focus, header button:hover {
+    background-color: #cdcdff;
 }
 
 header button:hover {
